@@ -24,15 +24,39 @@ void main() {
 void main() {
   int idade = 24;
   double altura = 1.73;
-  bool geek = (idade == altura); // 'FALSE', idade NÃO é igual a altura
-  String nome = 'João Boaventura';
-  String apelido = 'João';
+  bool geek = false; //(idade == altura) 'FALSE', idade NÃO é igual a altura
+  const String nome = 'João Boaventura';
+  final String apelido =
+      'João'; // 'final' funciona como uma 'const'. Não precisa ser definido no começo do código, mas uma vez definido, não pode ser alterado.
+  bool maiorDeIdade;
+  int energia = 100;
 
-  List<dynamic> Joao = [24, 1.73, 'João Boaventura', 'João'];
+  if (idade >= 18) {
+    maiorDeIdade = true;
+  } else {
+    maiorDeIdade = false;
+  }
 
-  String frase = 'Eu sou ${Joao[3]} \n'
-      'mas meu nome completo é: ${Joao[2]}.\n'
-      'Tenho ${Joao[1]}m de altura e ${Joao[0]} anos de idade';
+  for (int i = 1; i < 5; i++) {
+    print('Concluí $i voltas');
+  }
+
+  while (energia > 0) {
+    print('Mais uma repetição');
+    energia = energia - 6;
+  }
+
+  do {
+    print("Mais uma repetição");
+    energia = energia - 6;
+  } while (energia > 0);
+
+  List<dynamic> Joao = [idade, altura, geek, nome, apelido];
+
+  String frase = 'Olá, sou o ${Joao[4]}, mas meu nome completo é: ${Joao[3]}.\n'
+      'Eu me considero geek? ${Joao[2]}.\n'
+      'Tenho ${Joao[1]}m de altura e ${Joao[0]} anos de idade, \n'
+      'Eu sou maior de idade? $maiorDeIdade';
 
   List<String> listaNomes = ['Ricarth', 'Nathália', 'Alex', 'Ândriu', 'André'];
 
