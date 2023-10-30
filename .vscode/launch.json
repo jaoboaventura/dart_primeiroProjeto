@@ -8,7 +8,8 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "./aluramais.dart"
+            "program": "./curso_dois.dart"
+            //"program": "./aluramais.dart"
             //"program": "./projeto_inicial.dart",
             //"program": "./praticando.dart"
         }
