@@ -8,7 +8,9 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "./projeto_dart_curso03.dart"
+            "program": "./bin/viagem.dart"
+            //"program": "./bin/projeto_dart_curso03.dart",
+            //"program": "./bin/transporte.dart",
             //"program": "./dart_curso.dart"
             //"program": "./curso_dois.dart"
             //"program": "./aluramais.dart"
